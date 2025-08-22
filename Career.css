@@ -1,0 +1,134 @@
+.career-container {
+    background-image: url('/images/careerbk.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding:  0;
+    color: white;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-y: auto;
+    max-height: 100vh;
+}
+
+.career-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-bottom: 50px;
+   
+    padding-top: 20px;
+    max-width: 100%;
+    
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  color: #ffc107;
+}
+
+.career-intro {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+.job-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.job-card {
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 19px 25px;
+    border-radius: 12px;
+    width: 300px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.job-card:hover {
+    transform: scale(1.05);
+}
+
+.job-card h3 {
+    color: #ffc107;
+    margin-bottom: 10px;
+}
+
+.job-card p {
+    color: #ddd;
+}
+
+.apply-info {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.job-icon {
+    color: #ffc107;
+    margin-bottom: 10px;
+    animation: floatIcon 2s ease-in-out infinite;
+}
+
+@keyframes floatIcon {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.job-card h3 {
+    color: #fff;
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+
+.job-card p {
+    font-size: 0.95rem;
+    color: #ccc;
+}
+
+.apply-info {
+    font-size: 1.1rem;
+    color: #ccc;
+    text-align: left;
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.info-icon {
+    color: #ffc107;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+@media (max-width: 600px) {
+    .job-card {
+        width: 100%;
+    }
+}
+
+.job-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(255, 193, 7, 0.2);
+}
+
+.job-icon {
+    transition: transform 0.3s ease;
+}
+
+.job-card:hover .job-icon {
+    transform: scale(1.1);
+}

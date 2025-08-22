@@ -1,0 +1,82 @@
+.contact-container {
+    background-image: url('./images/contactbk.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 60px 20px;
+    color: white;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-container .overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 50px;
+    
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.contact-container h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+     color: #ffc107;
+}
+
+.contact-container .intro {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+.contact-container .contact-details {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.contact-container .contact-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 25px 30px;
+    border-radius: 12px;
+    width: 300px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact-container .contact-card:hover {
+    transform: translateY(-5px);
+}
+
+.contact-container .contact-card h2 {
+    color: #00bcd4;
+    margin-bottom: 10px;
+}
+
+.contact-container .contact-card p {
+    color: #eee;
+}
+
+.contact-container .social-links h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.contact-container .icons a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #00bcd4;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.contact-container .icons a:hover {
+    color: #03a9f4;
+}

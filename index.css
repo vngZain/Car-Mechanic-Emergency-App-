@@ -1,0 +1,197 @@
+/* Navbar Styles */
+.navbar {
+  width: 100%;
+  height: 75px;
+  background: linear-gradient(90deg, #005555, #007777);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Logo Section */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.logo span {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fdd395;
+  line-height: 1;
+  letter-spacing: 0.5px;
+}
+
+/* Navbar Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: flex-end;
+}
+
+.nav-item {
+  position: relative;
+  cursor: pointer;
+  font-size: 0.7rem;
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  letter-spacing: 0.3px;
+}
+
+.nav-item:hover {
+  color: #fdd395;
+}
+
+/* Dropdown Icon */
+.dropdown-icon {
+  margin-left: 4px;
+  font-size: 0.75rem;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background: #007777;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  min-width: 160px;
+  z-index: 9999;
+  flex-direction: column;
+}
+
+.dropdown-item {
+  padding: 10px 18px;
+  font-size: 0.7rem;
+  color: #ffffff;
+  white-space: nowrap;
+  transition: background 0.3s;
+}
+
+.dropdown-item:hover {
+  background: #009999;
+  color: #ffffff;
+}
+
+/* Show Dropdown */
+.dropdown-parent.open>.dropdown-menu {
+  display: flex;
+}
+
+/* Login Button */
+.book-button {
+  background-color: #007777;
+  padding: 8px 18px;
+  border-radius: 12px;
+  font-weight: 600;
+  color: #ffffff;
+  border: none;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  margin-left: 25px;
+}
+
+.book-button:hover {
+  background-color: #33cccc;
+}
+
+/* Main Section */
+.main-section {
+  padding-top: 140px;
+  min-height: 100vh;
+  background: #e0f7fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+/* Hero Section */
+.hero-text {
+  text-align: center;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.reserve-button,
+.explore-button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  background-color: #007777;
+  color: white;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.reserve-button:hover,
+.explore-button:hover {
+  background-color: #33cccc;
+}
+
+.carousel-wrapper {
+  margin-top: 40px;
+
+}
+
+.main-image {
+  width: 90%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    gap: 15px;
+  }
+
+  .logo span {
+    font-size: 1.1rem;
+  }
+
+  .book-button {
+    padding: 6px 14px;
+    font-size: 0.9rem;
+  }
+
+
+  .main-section {
+    padding-top: 150px;
+  }
+
+
+  .button-group {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

@@ -1,0 +1,90 @@
+.timeline-container {
+    position: relative;
+    padding: 80px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-y: auto;
+    max-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+        url('/images/update.jpg') no-repeat center center/cover;
+
+    color: #fff;
+    z-index: 0;
+    animation: scaleFade 20s ease-in-out infinite;
+}
+
+
+
+.timeline-heading {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #ffc107;
+    letter-spacing: 1px;
+}
+
+.timeline-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 60px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 30px;
+    border-left: 4px solid #ffc107;
+}
+
+.timeline-item {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.timeline-dot {
+    width: 14px;
+    height: 14px;
+    background-color: #ffc107;
+    border-radius: 50%;
+    position: absolute;
+    left: -11px;
+    top: 6px;
+    box-shadow: 0 0 10px #ffc107;
+}
+
+.timeline-date {
+    font-size: 1rem;
+    color: #aaa;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.timeline-content {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px 25px;
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.timeline-content h3 {
+    color: #ffc107;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.timeline-content p {
+    font-size: 1rem;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+.timeline-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.timeline-container::-webkit-scrollbar-thumb {
+    background: rgba(255, 193, 7, 0.4);
+    border-radius: 10px;
+}
